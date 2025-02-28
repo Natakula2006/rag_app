@@ -4,11 +4,11 @@ import google.generativeai as genai
 from PyPDF2 import PdfReader
 
 # Configure Google Gemini API key
-genai.configure(api_key="  ")
+genai.configure(api_key="AIzaSyBzK-krO3a_dbYqnFvod439GQPR_YoL3WM")
 
 # Function to read the PDF file
 def read_pdf(file_path):
-    """Reads the text from a PDF file."""
+   
     with open(file_path, 'rb') as file:
         reader = PdfReader(file)
         text = ""
@@ -28,7 +28,7 @@ def query_with_cag(context: str, query: str) -> str:
     return response.text.strip()
 
 # Streamlit app interface
-st.title("RAG Application with Google Gemini - by Nirmal Gaud")
+st.title("RAG Application")
 st.header("Upload a PDF and Ask Your Query")
 
 # Step 1: Ask the user to upload a PDF file
